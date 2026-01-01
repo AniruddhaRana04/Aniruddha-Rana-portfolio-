@@ -73,7 +73,7 @@ export default function RootLayout({ children }) {
               <span>© {new Date().getFullYear()} Aniruddha Rana. All rights reserved.</span>
               <div className="mt-3 md:mt-0 flex items-center gap-4">
                 <a href="#top" className="hover:text-sky-600">Back to top ↑</a>
-                <span>Built with Next.js</span>
+                <span>Built with love ❤️</span>
               </div>
             </div>
           </footer>
