@@ -13,7 +13,7 @@ export default function Home() {
         <img src="/avatar.jpg" alt="Aniruddha" className="w-28 h-28 rounded-full shadow-lg" />
         <div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold">Hi, I'm <span className="gradient-text">Aniruddha Rana</span></h1>
-          <p className="text-lg text-slate-700 dark:text-slate-300 mt-3">I build web apps and delightful user experiences — clean, accessible, and performant.</p>
+          <p className="text-lg text-slate-700 dark:text-slate-300 mt-3">Python || Data Science </p>
           <div className="pt-6">
             <a href="/resume.pdf" className="inline-block bg-sky-600 text-white px-4 py-2 rounded transform transition hover:-translate-y-1" target="_blank" rel="noopener noreferrer" download aria-label="Download resume">Download Resume</a>
             {' '}

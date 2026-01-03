@@ -43,7 +43,7 @@ export default function RootLayout({ children }) {
                   <img src="/avatar.jpg" alt="Aniruddha Rana" className="w-9 h-9 rounded-full shadow-sm" />
                   <span className="font-semibold">Aniruddha Rana</span>
                 </Link>
-                <p className="text-xs text-slate-500 mt-1 max-w-xs">Software engineer building web apps &mdash; available for freelance and full-time roles.</p>
+                <p className="text-xs text-slate-500 mt-1 max-w-xs">Python || Data Science</p>
               </div>
 
               <div className="flex gap-8">
