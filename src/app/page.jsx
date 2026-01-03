@@ -3,8 +3,8 @@ import Reveal from '../components/Reveal'
 
 export default function Home() {
   const featured = [
-    { title: 'Project One', description: 'Short description of the project and the problem it solves.', image: '/projects/placeholder-1.svg' },
-    { title: 'Project Two', description: 'Short description of the project and the impact.', image: '/projects/placeholder-1.svg' }
+    { title: 'Project One', description: 'Project will be added soon.', image: '/projects/placeholder-1.svg' },
+    { title: 'Project Two', description: 'Project will be added soon.', image: '/projects/placeholder-1.svg' }
   ]
 
   return (
