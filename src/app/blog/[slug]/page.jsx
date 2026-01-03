@@ -15,6 +15,8 @@ export default async function Post({ params }) {
     <main>
       <h1 className="text-3xl font-bold mb-4">{data.title}</h1>
       <MDXRemote source={mdxSource} />
+      <p className="text-xs text-slate-500 mt-4">{new Date(data.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+      <p className="text-sm text-slate-600 dark:text-slate-300 mt-2 text-justify">{data.description}</p>
     </main>
   )
 }

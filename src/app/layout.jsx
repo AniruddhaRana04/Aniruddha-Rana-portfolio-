@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
               <Link href="#projects" className="nav-link">Projects</Link>
               <Link href="/about" className="nav-link">About</Link>
               <Link href="/certificates" className="nav-link">Certificates</Link>
-              {/* <Link href="/blog" className="nav-link">Blog</Link> */}
+              <Link href="/blog" className="nav-link">Blog</Link>
               <Link href="/contact" className="nav-link">Contact</Link>
               <ThemeToggle />
             </div>
@@ -52,7 +52,7 @@ export default function RootLayout({ children }) {
                   <ul className="space-y-1">
                     <li><Link href="/projects" className="hover:text-sky-600">Projects</Link></li>
                     <li><Link href="/about" className="hover:text-sky-600">About</Link></li>
-                    {/* <li><Link href="/blog" className="hover:text-sky-600">Blog</Link></li> */}
+                    <li><Link href="/blog" className="hover:text-sky-600">Blog</Link></li>
                     <li><Link href="/contact" className="hover:text-sky-600">Contact</Link></li>
                   </ul>
                 </div>
