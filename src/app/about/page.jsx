@@ -2,7 +2,7 @@ export default function About() {
   return (
     <main>
       <h1 className="text-3xl font-bold mb-4">About — Aniruddha Rana</h1>
-      <p className="text-slate-700">Hello! I’m Aniruddha Rana, a passionate Computer Applications student pursuing my Bachelor of Computer Application (BCA) from Midnapore College (Autonomous), affiliated with Vidyasagar University. I have a strong interest in web development, Python programming, and building real-world digital solutions.
+      <p className="text-slate-550">Hello! I’m Aniruddha Rana, a passionate Computer Applications student pursuing my Bachelor of Computer Application (BCA) from Midnapore College (Autonomous), affiliated with Vidyasagar University. I have a strong interest in web development, Python programming, and building real-world digital solutions.
         <br /> <br />
         I have hands-on experience in developing web applications, including my academic project “HomeFixHub”, a platform designed to connect customers with skilled home service providers. This project helped me gain practical exposure to frontend development, backend logic, and problem-solving.
         <br /> <br />
