@@ -12,8 +12,10 @@ export default function MobileNav() {
 
       <div id="mobile-menu" className={`${open ? 'block' : 'hidden'} mt-3 bg-white dark:bg-slate-800 rounded shadow-sm p-4`}>
         <nav className="flex flex-col space-y-2 text-sm">
-          <Link href="#projects" onClick={() => setOpen(false)}>Projects</Link>
-          <Link href="/about" onClick={() => setOpen(false)}>About</Link>          <Link href="/certificates" onClick={() => setOpen(false)}>Certificates</Link>          <Link href="/blog" onClick={() => setOpen(false)}>Blog</Link>
+          <Link href="/projects" onClick={() => setOpen(false)}>Projects</Link>
+          <Link href="/about" onClick={() => setOpen(false)}>About</Link>
+          <Link href="/certificates" onClick={() => setOpen(false)}>Certificates</Link>
+          <Link href="/blog" onClick={() => setOpen(false)}>Blog</Link>
           <Link href="/contact" onClick={() => setOpen(false)}>Contact</Link>
         </nav>
       </div>

@@ -1,11 +1,9 @@
 import ProjectCard from '../components/ProjectCard'
 import Reveal from '../components/Reveal'
+import { projects } from '../data/projects'
 
 export default function Home() {
-  const featured = [
-    { title: 'Project One', description: 'Project will be added soon.', image: '/projects/placeholder-1.svg' },
-    { title: 'Project Two', description: 'Project will be added soon.', image: '/projects/placeholder-1.svg' }
-  ]
+  const featured = projects.slice(0, 2)
 
   return (
     <main>
@@ -28,7 +26,7 @@ export default function Home() {
         <div className="grid gap-6 md:grid-cols-2">
           {featured.map((p) => (
             <Reveal key={p.title}>
-              <ProjectCard title={p.title} description={p.description} image={p.image} />
+              <ProjectCard title={p.title} description={p.description} image={p.image} href={p.href}/>
             </Reveal>
           ))}
         </div>
