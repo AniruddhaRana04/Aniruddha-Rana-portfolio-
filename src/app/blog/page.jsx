@@ -2,6 +2,7 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import Link from 'next/link'
+import BlogCard from '../../components/BlogCard'
 
 export default function Blog() {
   const postsDir = path.join(process.cwd(), 'src', 'content', 'blog')
@@ -16,15 +17,19 @@ export default function Blog() {
   return (
     <main>
       <h1 className="text-3xl font-bold mb-4">Blog</h1>
-      <ul className="space-y-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {posts.map(p => (
-          <li key={p.slug}>
-            <Link href={`/blog/${p.slug}`} className="text-sky-600 font-semibold">{p.title}</Link>
-            <p className="text-sm text-slate-600 dark:text-slate-300">{p.short_description}</p>
-            <p className="text-xs text-slate-500">{new Date(p.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
-          </li>
+          <BlogCard
+            key={p.slug}
+            title={p.title}
+            date={p.date}
+            short_description={p.short_description}
+            description={p.description}
+            slug={p.slug}
+            image={p.cover || '/blogs/placeholder-1.svg'}
+          />
         ))}
-      </ul>
+      </div>
     </main>
   )
 }
