@@ -12,10 +12,14 @@ export default function CertificateCard({
   const [expanded, setExpanded] = useState(false)
 
   return (
-    <article className="card flex gap-4 items-start h-full">
-      <img src={image} alt={title} className="w-28 h-20 rounded flex-shrink-0" />
+    <article className="bg-white dark:bg-slate-800 shadow-sm hover:shadow-md transition overflow-hidden rounded-lg w-full h-full flex flex-col sm:flex-row gap-4 items-start">
+      <div className="sm:flex-shrink-0 sm:w-28 p-2 w-full">
+        <div className="overflow-hidden rounded-lg aspect-[16/9] sm:aspect-[16/9] bg-slate-100 dark:bg-slate-800">
+          <img src={image} alt={title} loading="lazy" className="w-full h-full object-cover object-center block" />
+        </div>
+      </div>
 
-      <div className="flex-1 flex flex-col">
+      <div className="p-4 flex-1 flex flex-col">
         <h3 className="font-semibold">{title}</h3>
         <p className="text-xs text-slate-500">
           {issuer} • {date}
