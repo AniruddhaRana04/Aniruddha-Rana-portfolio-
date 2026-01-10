@@ -24,7 +24,6 @@ export default function Blog() {
             title={p.title}
             date={p.date}
             short_description={p.short_description}
-            description={p.description}
             slug={p.slug}
             image={p.cover || '/blogs/placeholder-1.svg'}
           />

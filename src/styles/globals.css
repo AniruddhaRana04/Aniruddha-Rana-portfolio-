@@ -42,6 +42,17 @@ html, body {
 .animate-fadeIn { animation: fadeIn .6s ease both; }
 .animate-float { animation: float 4s ease-in-out infinite; }
 
+/* MDX content styling: readable line-height and justified body text */
+.mdx-content { line-height: 1.75; }
+.mdx-content p, .mdx-content li { text-align: justify; hyphens: auto; }
+.mdx-content blockquote { margin-left: 0; padding-left: 1rem; border-left: 3px solid rgba(99,102,241,0.08); color: rgba(100,116,139,1); }
+.mdx-content img { max-width: 100%; height: auto; border-radius: .5rem; box-shadow: 0 10px 30px rgba(2,6,23,0.06); display: block; margin: 1rem 0; }
+.mdx-content h1, .mdx-content h2, .mdx-content h3, .mdx-content h4 { text-align: left; }
+
+@media (max-width: 640px) {
+  .mdx-content p, .mdx-content li { text-align: left; }
+}
+
 /* Underline on nav hover */
 .nav-link { position: relative; }
 .nav-link::after { content: ''; position: absolute; left: 0; bottom: -4px; height: 2px; width: 0; background: linear-gradient(90deg,#06b6d4,#7c3aed); transition: width .25s ease; }

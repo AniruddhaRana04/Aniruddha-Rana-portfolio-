@@ -2,13 +2,12 @@
 
 import { useState } from 'react'
 
-export default function BlogCard({ title, date, short_description, description, slug, image = '/blogs/placeholder-1.svg' }) {
+export default function BlogCard({ title, date, short_description, slug, image = '/blogs/placeholder-1.svg' }) {
   const [expanded, setExpanded] = useState(false)
 
-  const hasShort = Boolean(short_description)
-  const fullText = description ?? short_description ?? ''
-  const collapsedText = short_description ?? fullText
-  const needsToggle = hasShort ? short_description.length > 140 : fullText.length > 140
+  const text = short_description ?? ''
+  const needsToggle = text.length > 140
+  const displayed = expanded ? text : (needsToggle ? text.slice(0, 140) + '...' : text)
 
   return (
     <article className="bg-white dark:bg-slate-800 shadow-sm hover:shadow-md transition overflow-hidden rounded-lg w-full h-full">
@@ -27,7 +26,7 @@ export default function BlogCard({ title, date, short_description, description, 
             <div
               className={`text-sm text-slate-600 dark:text-slate-300 mt-3 transition-all break-words ${expanded ? 'max-h-[1000px]' : 'h-20 overflow-hidden'}`}
             >
-              {expanded ? (hasShort ? short_description : fullText) : collapsedText}
+              {displayed}
             </div>
           </div>
 
