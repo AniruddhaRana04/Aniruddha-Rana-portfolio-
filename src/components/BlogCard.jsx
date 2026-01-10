@@ -12,8 +12,10 @@ export default function BlogCard({ title, date, short_description, slug, image =
   return (
     <article className="bg-white dark:bg-slate-800 shadow-sm hover:shadow-md transition overflow-hidden rounded-lg w-full h-full">
       <div className="flex flex-col md:flex-row items-stretch gap-4">
-        <div className="md:flex-shrink-0 md:w-40 overflow-hidden rounded-t-lg md:rounded-l-lg md:rounded-t-none p-2">
-          <img src={image} alt={title} className="w-full h-32 md:h-32 object-cover object-center block rounded-sm" />
+        <div className="md:flex-shrink-0 md:w-40 p-2">
+          <div className="overflow-hidden rounded-lg aspect-[16/9] md:aspect-[16/9] bg-slate-100 dark:bg-slate-800">
+            <img src={image} alt={title} loading="lazy" className="w-full h-full object-cover object-center block" />
+          </div>
         </div>
 
         <div className="p-4 flex-1 flex flex-col justify-between md:min-h-[8rem]">
